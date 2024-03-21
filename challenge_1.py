@@ -21,6 +21,9 @@ b = validate(input("Please enter the second side: "))
 c = validate(input("Please enter the third side: "))
 
 s = (a + b + c) / 2
-area = math.sqrt(s*((s-a)*(s-b)*(s-c)))
-
-print(f"The area of the triangle is: {area}")
+# Check if the traingle is degenrate and prompt
+if min(a, b, c) <= 0 or (a + b + c) <= 2 * max(a, b, c):
+    print("Those values do not form a triangle.")
+else:
+    area = math.sqrt(s * ((s - a) * (s - b) * (s - c)))
+    print(f"The area of the triangle is: {area}")
