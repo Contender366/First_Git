@@ -1,4 +1,5 @@
-"""Challenge 1 of Task 2"""
+"""This program takes side of a triangle form the user and prints out the
+area of the triangle"""
 
 import math
 
